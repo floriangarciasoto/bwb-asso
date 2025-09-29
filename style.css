@@ -182,12 +182,6 @@ header nav a:hover {
     color: var(--secondary-color);
 }
 
-
-nav > div > * {
-    /* margin: 0.5em; */
-}
-
-
 /*---- All pages ----*/
 
 main {
@@ -374,7 +368,6 @@ form button:hover {
     .article .date {font-size: 0.9rem;}
     .article-body {font-size: 1rem;}
 
-
 }
 
 
@@ -382,6 +375,7 @@ form button:hover {
 /* Only for devices with pointer */
 @media (hover: hover) {
 
-	header nav a {transition-duration: 0.4s;}
+	header nav a,
+    button {transition-duration: 0.4s;}
 
 }
