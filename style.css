@@ -214,14 +214,14 @@ footer > div:last-child {text-align: right;}
     text-align: center;
 }
 
-.service-description {height: 3em;}
+#discover .description {height: 3em;}
 
 
 /*---- Responsive ----*/
 
 @media screen and (min-width: 601px) {
 
-	.service {width: 400px;}
+	#discover article {width: 400px;}
 
 }
 
@@ -229,7 +229,7 @@ footer > div:last-child {text-align: right;}
 
 @media screen and (max-width: 600px) {
 
-	.service {width: 80%;}
+	#discover article {width: 80%;}
 
 }
 
