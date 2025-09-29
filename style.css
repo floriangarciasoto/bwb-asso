@@ -1,0 +1,243 @@
+body {
+	--main-color: black;
+	--secondary-color: #1F67E3;
+	--main-bg-color: white;
+	--main-font: 'Arial';
+	font-family: var(--main-font);
+	color: var(--main-color);
+	background-color: var(--main-bg-color);
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+
+
+/*-- Elements --*/
+
+/*---- Containers ----*/
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*---- Flex classes ----*/
+
+.flx {display: flex;}
+.flx-jc {justify-content: center;}
+.flx-js {justify-content: flex-start;}
+.flx-je {justify-content: flex-end;}
+.flx-jb {justify-content: space-between;}
+.flx-ja {justify-content: space-around;}
+.flx-ac {align-items: center;}
+.flx-as {align-items: flex-start;}
+.flx-ae {align-items: flex-end;}
+.flx-dc {flex-direction: column;}
+.flx-ww {flex-wrap: wrap;}
+.flx-cells-h > *, .flx-cells-v > * {margin: 10px;}
+.flx-cells-h > * {width: 100%;}
+.flx-cells-v > * {height: 100%;}
+
+/*---- Separators ----*/
+
+h1, h2, h3 {text-align: center;}
+
+hr {
+	height: 1px;
+	color: var(--main-color);
+	background-color: var(--main-color);
+	border: none;
+}
+
+/*---- Inputs ----*/
+
+/*------ All margins ------*/
+
+button, input[type=submit], div.buttonlike, input[type=text], input[type=password], textarea, input[type=number], select {margin: 5px;}
+
+/*------ Button and submit ------*/
+
+button, input[type=submit], div.buttonlike {
+	cursor: pointer;
+	font-family: var(--main-font);
+	font-weight: bold;
+	background: var(--main-bg-color);
+	color: var(--main-color);
+	padding: 7.5px;
+	border: 1.5px solid var(--main-color);
+	border-radius: 5px;
+}
+button:hover, input[type=submit]:hover{
+	color: var(--main-bg-color);
+	background: var(--secondary-color);
+	border: 1.5px solid var(--secondary-color);
+}
+div.buttonlike {
+	width: 15.333px;
+	height: 15.333px;
+}
+
+/*------ Text inputs ------*/
+
+input[type=text], input[type=password], textarea {
+	font-family: var(--main-font);
+	color: var(--main-color);
+	background: none;
+	border: none;
+	border-bottom: 1px solid;
+}
+
+input[type=text], input[type=password] {font-size: 18px;}
+input[type=text].maxedwidth, input[type=password].maxedwidth {width: 100%;}
+
+textarea {border: 1px solid;}
+textarea.maxedwidth {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*------ Number input ------*/
+
+input[type=number] {
+	font-family: var(--main-font);
+	color: var(--main-color);
+	background: none;
+	border: 1px solid;
+	width: 7em;
+	font-size: 18px;
+}
+
+/*------ Select ------*/
+
+select, select option {
+	cursor: pointer;
+	background-color: var(--main-bg-color);
+	font-family: var(--main-font);
+	color: var(--main-color);
+	padding: 5px;
+}
+select {
+	text-overflow: ellipsis;
+	max-width: 150px;
+	border: 2px solid var(--main-color);
+	border-radius: 5px;
+}
+select:hover {
+	background-color: var(--main-color);
+	color: var(--main-bg-color);
+}
+
+
+
+/*-- Pages --*/
+
+.hidden {display: none;}
+
+/*---- Header ----*/
+
+header {
+    padding: 1em;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+}
+
+nav > div > * {
+    margin: 0.5em;
+}
+
+header img {
+    width: 2em;
+    height: 2em;
+    margin-right: 10px;
+}
+
+header p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/*---- All pages ----*/
+
+main {
+	padding-top: 100px;
+	background-color: var(--main-bg-color);
+}
+
+.boxes {
+	margin: 1em;
+	text-align: center;
+}
+.box {
+	margin: 2em;
+	margin-bottom: 2em;
+	padding: 1em;
+	border-radius: 10px;
+	background-color: #eee;
+}
+.box-image {width: 100%;}
+.box-name {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.box-description {
+	font-size: 0.8em;
+}
+.box-button {
+	margin: 0.5em 0;
+
+}
+
+/*---- Footer ----*/
+
+footer {
+	background-color: black;
+	color: white;
+	font-size: initial;
+	margin-top: 15px;
+	padding: 50px 0;
+	border-top: 2px solid;
+}
+footer > div:last-child {text-align: right;}
+
+#footer-sep {height: 1em;}
+
+/*---- / ----*/
+
+#about {
+    text-align: center;
+}
+
+.service-description {height: 3em;}
+
+
+/*---- Responsive ----*/
+
+@media screen and (min-width: 601px) {
+
+	.service {width: 400px;}
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+	.service {width: 80%;}
+
+}
+
+
+
+/* Only for devices with pointer */
+@media (hover: hover) {
+
+	header nav a {transition-duration: 0.4s;}
+
+}

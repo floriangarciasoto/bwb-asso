@@ -16,13 +16,17 @@
      En-tête du site
   ========================== -->
   <header class="flx flx-jb flx-ac">
+    <div class="flx flx-ac">
+      <img src="images/logo.jpg" alt="Logo">
+      <p>Pixel'Art</p>
+    </div>
     <nav>
       <!-- Navigation principale -->
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Activités</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="flx">
+        <a href="/">Accueil</a>
+        <a href="/activities/">Activités</a>
+        <a href="/contact/">Contact</a>
+      </div>
     </nav>
   </header>
 
@@ -34,33 +38,64 @@
       <!-- Section principale -->
       <h1>Pixel’Art</h1>
       <div class="flx flx-jc">
-        <p id="about">Spécialistes de l’informatique, nous vous accompagnons dans toutes vos démarches :
-          réparation rapide de PC, vente de pièces détachées fiables et configurateur sur mesure pour créer
-          l’ordinateur qui correspond parfaitement à vos besoins. Que vous soyez particulier ou professionnel,
-          nous mettons notre expertise à votre service pour vous garantir performance, fiabilité et
-          tranquillité d’esprit.</p>
+        <img src="/images/angers-jeux-video-animation.png" alt="Salon de l'asso">
+      </div>
+      <div class="flx flx-jc">
+        <p id="slogan">Replongez dans la magie du jeu vidéo rétro et partagez la culture geek !</p>
       </div>
     </section>
 
-    <section id="activities">
-      <h2>Activités</h2>
+    <section id="pages">
+      <h2>Nous découvrir</h2>
 
+      <div class="flx flx-jc flx-ww" style="text-align: center;">
+
+        <div class="service box">
+          <img class="box-image" src="/images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg" alt="">
+          <p class="box-name">Activités</p>
+          <p class="service-description box-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur ab commodi corrupti consectetur sequi doloribus, distinctio et fuga laboriosam libero.</p>
+          <a href="/activities/" class="service-button"><button>Voir nos activités</button></a>
+        </div>
+
+        <div class="service box">
+          <img class="box-image" src="/images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="">
+          <p class="box-name">Actu</p>
+          <p class="service-description box-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolorem, nisi? Hic ex tenetur architecto corporis amet corrupti error placeat eaque?</p>
+          <a href="/actu/" class="service-button"><button>Voir notre actu</button></a>
+        </div>
+
+        <div class="service box">
+          <img class="box-image" src="/images/OIP.jpg" alt="">
+          <p class="box-name">Contact</p>
+          <p class="service-description box-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolorum, est quas? Eveniet id amet animi porro, reprehenderit quaerat doloremque esse!</p>
+          <a href="/contact/" class="service-button"><button>Nous contacter</button></a>
+        </div>
+
+      </div>
 
     </section>
 
-    <section id="contact">
-      <h2>Nous contacter</h2>
-
-
-    </section>
 
   </main>
 
   <!-- ==========================
      Pied de page
   ========================== -->
-  <footer>
-    <p>&copy; 2025 - Pixel’Art</p>
+  <footer class="flx flx-ja">
+    <div>
+      <div>Nous suivre sur les réseaux :</div>
+      <a href=".">X</a>
+      <a href=".">Instagram</a>
+      <a href=".">Facebook</a>
+    </div>
+    <div>
+      <p>&copy; 2025 - Pixel’Art</p>
+      <div>99 Rue d'avant 2000</div>
+      <div>contact@pixelart.fr</div>
+    </div>
   </footer>
 
 </body>
