@@ -20,7 +20,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: inherit;
+	color: #478bff;
 }
 
 /*---- Flex classes ----*/
@@ -175,6 +175,9 @@ header nav a {
     transition: color 0.3s;
 }
 
+header nav a {
+    color: var(--main-color);
+}
 header nav a:hover {
     color: var(--secondary-color);
 }
