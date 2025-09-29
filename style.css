@@ -134,8 +134,6 @@ select:hover {
 
 /*-- Pages --*/
 
-.hidden {display: none;}
-
 /*---- Header ----*/
 
 header {
@@ -148,10 +146,6 @@ header {
     background-color: white;
 }
 
-nav > div > * {
-    margin: 0.5em;
-}
-
 header img {
     width: 2em;
     height: 2em;
@@ -162,6 +156,34 @@ header p {
     margin: 0;
     font-weight: bold;
 }
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+}
+
+
+nav > div > * {
+    /* margin: 0.5em; */
+}
+
 
 /*---- All pages ----*/
 
