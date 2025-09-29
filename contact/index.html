@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <!-- CSS principal -->
   <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
 
   <!-- ==========================
@@ -36,6 +38,23 @@
 
     <h1>Nous contacter</h1>
 
+    <div class="flx flx-jc">
+      <p class="desc-page">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id cumque maiores quas et, excepturi nesciunt accusantium eaque aliquid enim laboriosam rerum ratione alias nemo. Debitis inventore eos possimus voluptatum? Culpa non reiciendis inventore autem aliquam, reprehenderit cumque assumenda quia cupiditate.</p>
+    </div>
+
+    <form action="traitement.php" method="POST">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+
+      <input type="submit" value="Envoyer">
+    </form>
+
   </main>
 
   <!-- ==========================
@@ -57,4 +76,5 @@
 
 
 </body>
+
 </html>
