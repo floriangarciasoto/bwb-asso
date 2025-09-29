@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel’Art</title>
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- CSS principal -->
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -15,19 +17,37 @@
   <!-- ==========================
      En-tête du site
   ========================== -->
-  <header class="flx flx-jb flx-ac">
-    <div class="flx flx-ac">
-      <img src="/images/logo.jpg" alt="Logo">
-      <p>Pixel'Art</p>
+  <header class="bg-gray-900 text-white px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="/images/logo.jpg" alt="Logo" class="h-10 w-10 rounded">
+        <p class="text-xl font-bold">Pixel'Art</p>
+      </div>
+
+      <!-- Menu navigation (desktop) -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="/">Accueil</a>
+        <a href="/activities/">Activités</a>
+        <a href="/actu/">Actu</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+
+      <!-- Bouton burger (mobile) -->
+      <button id="menu-btn" class="block md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
     </div>
-    <nav>
-      <!-- Navigation principale -->
-      <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/activities/">Activités</a></li>
-        <li><a href="/actu/">Actu</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
+
+    <!-- Menu mobile (caché par défaut) -->
+    <nav id="mobile-menu" class="hidden flex-col bg-white text-center text-gray-900 px-6 py-4 md:hidden space-y-4">
+      <a href="/" class="block hover:text-cyan-500">Accueil</a>
+      <a href="/activities/" class="block hover:text-cyan-500">Activités</a>
+      <a href="/actu/" class="block hover:text-cyan-500">Actu</a>
+      <a href="/contact/" class="block hover:text-cyan-500">Contact</a>
     </nav>
   </header>
 
@@ -35,7 +55,7 @@
      Contenu principal
   ========================== -->
   <main>
-    <h1>Nos activités</h1>
+    <h1 class="text-4xl font-bold mt-4 mb-2">Nos activités</h1>
     <div class="flx flx-jc">
       <p class="desc-page">
         Pixel’Art propose des ateliers variés autour du rétro-gaming, du pixel art et de la culture geek. Notre objectif
@@ -45,23 +65,23 @@
     </div>
 
     <section id="activities">
-      <h2>Découvrez nos activités</h2>
+      <h2 class="text-3xl font-semibold mt-4 mb-2">Découvrez nos activités</h2>
 
       <article class="box">
         <img
           src="/images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
           alt="">
         <div class="activity-text flx flx-dc flx-jb flx-ac">
-          <h3>Atelier Rétro-Gaming</h3>
+          <h3 class="text-2xl font-semibold mt-3 mb-1">Atelier Rétro-Gaming</h3>
           <div>
-            <h4>Présentation</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Présentation</h4>
             <p>Un moment pour revivre la magie des jeux vidéo d’autrefois, avec les consoles mythiques comme la NES, la
               Super Nintendo, la Megadrive ou encore la PlayStation 1. Cet atelier est ouvert à tous, des passionnés aux
               simples curieux.</p>
-            <h4>Déroulé</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Déroulé</h4>
             <p>Les participants jouent librement à des titres emblématiques (Mario, Sonic, Street Fighter…) ou
               participent à des mini-tournois amicaux organisés par l’association.</p>
-            <h4>Objectif</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Objectif</h4>
             <p>Préserver le patrimoine vidéoludique, créer un espace convivial et transmettre la passion du rétro-gaming
               aux nouvelles générations.</p>
           </div>
@@ -72,15 +92,15 @@
       <article class="box">
         <img src="/images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="">
         <div class="activity-text flx flx-dc flx-jb flx-ac">
-          <h3>Création Pixel Art</h3>
+          <h3 class="text-2xl font-semibold mt-3 mb-1">Création Pixel Art</h3>
           <div>
-            <h4>Présentation</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Présentation</h4>
             <p>Le pixel art, c’est l’art de créer avec des petits carrés colorés, comme dans les jeux 8-bit. Accessible
               et créatif, il permet d’imaginer des personnages, logos ou décors inspirés de la culture geek.</p>
-            <h4>Déroulé</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Déroulé</h4>
             <p>Ateliers pratiques avec des perles Hama, du papier quadrillé ou des logiciels simples de graphisme. Les
               créations peuvent être exposées, offertes ou utilisées pour décorer les événements de l’asso.</p>
-            <h4>Objectif</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Objectif</h4>
             <p>Stimuler la créativité, développer l’esprit artistique et renforcer le lien entre art et culture geek.
             </p>
           </div>
@@ -91,15 +111,15 @@
       <article class="box">
         <img src="/images/OIP.jpg" alt="">
         <div class="activity-text flx flx-dc flx-jb flx-ac">
-          <h3>Soirée Culture Geek</h3>
+          <h3 class="text-2xl font-semibold mt-3 mb-1">Soirée Culture Geek</h3>
           <div>
-            <h4>Présentation</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Présentation</h4>
             <p>Plus qu’une simple rencontre, c’est une immersion dans l’univers geek à travers le cinéma, les séries,
               les mangas, les jeux de rôle ou encore les quiz thématiques.</p>
-            <h4>Déroulé</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Déroulé</h4>
             <p>La soirée s’organise autour de projections (films cultes comme Retour vers le futur ou Akira), de débats
               passionnés, de quiz interactifs et parfois même de petites sessions de jeu de rôle.</p>
-            <h4>Objectif</h4>
+            <h4 class="text-xl font-bold mt-2 mb-1">Objectif</h4>
             <p>Créer un moment de partage entre passionnés, transmettre des connaissances et favoriser l’échange dans
               une ambiance conviviale et détendue.</p>
           </div>
@@ -129,6 +149,14 @@
     </div>
   </footer>
 
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 
 </html>

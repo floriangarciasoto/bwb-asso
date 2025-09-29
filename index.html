@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel’Art</title>
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- CSS principal -->
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -15,19 +17,37 @@
   <!-- ==========================
      En-tête du site
   ========================== -->
-  <header class="flx flx-jb flx-ac">
-    <div class="flx flx-ac">
-      <img src="/images/logo.jpg" alt="Logo">
-      <p>Pixel'Art</p>
+  <header class="bg-gray-900 text-white px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="/images/logo.jpg" alt="Logo" class="h-10 w-10 rounded">
+        <p class="text-xl font-bold">Pixel'Art</p>
+      </div>
+
+      <!-- Menu navigation (desktop) -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="/">Accueil</a>
+        <a href="/activities/">Activités</a>
+        <a href="/actu/">Actu</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+
+      <!-- Bouton burger (mobile) -->
+      <button id="menu-btn" class="block md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
     </div>
-    <nav>
-      <!-- Navigation principale -->
-      <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/activities/">Activités</a></li>
-        <li><a href="/actu/">Actu</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
+
+    <!-- Menu mobile (caché par défaut) -->
+    <nav id="mobile-menu" class="hidden flex-col bg-white text-center text-gray-900 px-6 py-4 md:hidden space-y-4">
+      <a href="/" class="block hover:text-cyan-500">Accueil</a>
+      <a href="/activities/" class="block hover:text-cyan-500">Activités</a>
+      <a href="/actu/" class="block hover:text-cyan-500">Actu</a>
+      <a href="/contact/" class="block hover:text-cyan-500">Contact</a>
     </nav>
   </header>
 
@@ -35,22 +55,27 @@
      Contenu principal
   ========================== -->
   <main>
+
     <section id="home">
       <!-- Section principale -->
-      <h1>Pixel’Art</h1>
+      <h1 class="text-4xl font-bold mt-4 mb-2">Pixel’Art</h1>
+      <div class="flx flx-jc">
+        <h3 class="text-2xl font-semibold mt-3 mb-1" id="slogan">Replongez dans la magie du jeu vidéo rétro et partagez la culture geek !</h3>
+      </div>
       <div class="flx flx-jc">
         <img id="main-img" src="/images/angers-jeux-video-animation.png" alt="Salon de l'asso">
       </div>
       <div class="flx flx-jc">
-        <h3 id="slogan">Replongez dans la magie du jeu vidéo rétro et partagez la culture geek !</h3>
-      </div>
-      <div class="flx flx-jc">
-        <p id="site-description">Bienvenue sur le site de Pixel’Art, une association dédiée au rétro-gaming et à la culture geek. Notre objectif est de préserver et de partager la magie des jeux vidéo classiques tout en créant des moments de convivialité à travers des ateliers créatifs et des soirées thématiques. Que vous soyez passionné de consoles vintage, amateur de pixel art ou simplement curieux de découvrir l’univers geek, vous trouverez ici un espace de partage, d’échange et de bonne humeur.</p>
+        <p id="site-description">Bienvenue sur le site de Pixel’Art, une association dédiée au rétro-gaming et à la
+          culture geek. Notre objectif est de préserver et de partager la magie des jeux vidéo classiques tout en créant
+          des moments de convivialité à travers des ateliers créatifs et des soirées thématiques. Que vous soyez
+          passionné de consoles vintage, amateur de pixel art ou simplement curieux de découvrir l’univers geek, vous
+          trouverez ici un espace de partage, d’échange et de bonne humeur.</p>
       </div>
     </section>
 
     <section id="discover" class="boxes">
-      <h2>Nous découvrir</h2>
+      <h2 class="text-3xl font-semibold mt-4 mb-2">Nous découvrir</h2>
 
       <div class="flx flx-jc flx-ww" style="text-align: center;">
 
@@ -108,6 +133,14 @@
     </div>
   </footer>
 
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 
 </html>
