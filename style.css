@@ -242,6 +242,15 @@ footer > div:last-child {text-align: right;}
     margin: 1em;
 }
 
+#site-description {
+    margin: 1em;
+    text-align: center;
+}
+
+#discover h2 {
+    margin-bottom: 0;
+}
+
 /* ---- Activities ---- */
 
 .activity-text {
@@ -329,6 +338,10 @@ form button:hover {
 
     #main-img {width: 50%;}
 
+    #site-description {
+        width: 750px;
+    }
+
 	#discover article {width: 400px;}
 
     #activities img {height: 550px;}
@@ -344,6 +357,10 @@ form button:hover {
 @media screen and (max-width: 600px) {
 
     #main-img {width: 80%;}
+
+    #site-description {
+        width: 80%;
+    }
 
 	#discover article {
         width: 80%;
