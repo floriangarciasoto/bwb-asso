@@ -253,6 +253,46 @@ footer > div:last-child {text-align: right;}
     text-align: center;
 }
 
+/* ---- Actu ---- */
+
+.article {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+.article:last-child {border: none;}
+
+.article-header {
+    gap: 20px;
+}
+
+.article-text {
+    flex: 1;
+}
+
+.article-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-body {
+    margin-top: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.article h2 {
+    margin: 0 0 5px;
+}
+
+.article .date {
+    font-size: 0.9em;
+    color: gray;
+}
+
 /* ---- Contact ---- */
 
 form {
@@ -326,6 +366,10 @@ form button:hover {
     #activities article img {
         width: 100%;
     }
+
+    .article {margin: 0 1em;}
+    .article .date {font-size: 0.9rem;}
+    .article-body {font-size: 1rem;}
 
 
 }
