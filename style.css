@@ -210,8 +210,9 @@ footer > div:last-child {text-align: right;}
 
 /*---- / ----*/
 
-#about {
+#slogan {
     text-align: center;
+    margin: 1em;
 }
 
 #discover .description {height: 3em;}
@@ -221,6 +222,8 @@ footer > div:last-child {text-align: right;}
 
 @media screen and (min-width: 601px) {
 
+    #main-img {width: 50%;}
+
 	#discover article {width: 400px;}
 
 }
@@ -229,8 +232,18 @@ footer > div:last-child {text-align: right;}
 
 @media screen and (max-width: 600px) {
 
-	#discover article {width: 80%;}
+    #main-img {width: 80%;}
 
+	#discover article {
+        width: 80%;
+        margin: 0.5em 0;
+    }
+
+    #discover .description {height: 5em;}
+
+    #discover article p {
+        margin: 0.25em 0;
+    }
 }
 
 
