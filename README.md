@@ -69,11 +69,11 @@ Je modifie le fichier hosts avec PowerShell en tant qu'administrateur :
 notepad C:\Windows\System32\drivers\etc\hosts
 ```
 
-Et j'ajoute les lignes suivantes :
+Pour y ajouter les lignes suivantes :
 
 ```
-127.0.0.1   pcslack.bwb.local
-::1 pcslack.bwb.local
+127.0.0.1   asso.bwb.local
+::1 asso.bwb.local
 ```
 
 Une fois que c'est fait, je peux à présent activer le site et recharger Apache :
