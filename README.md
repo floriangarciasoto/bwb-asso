@@ -12,7 +12,7 @@ J'ai le code de mon site dans un dépôt Git qui se trouve dans mon répertoire 
 C:\Users\fgs\code\bwb\bwb-asso\
 ```
 
-Je fais donc dans WSL un lien symbolique vers le serveur Apache de WSL pour qu'il accède de façon conventionnelle aux fichiers (as besoin d'utiliser chown dans ce cas précis) :
+Je fais donc dans WSL un lien symbolique vers le serveur Apache de WSL pour qu'il accède de façon conventionnelle aux fichiers (pas besoin d'utiliser chown dans ce cas précis) :
 
 ```
 sudo ln -s /mnt/c/Users/fgs/code/bwb/bwb-asso /var/www/asso.bwb.local
