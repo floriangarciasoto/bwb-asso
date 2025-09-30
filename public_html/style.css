@@ -1,3 +1,7 @@
+/*-- Global --*/
+
+/*---- Body ----*/
+
 body {
 	--main-color: black;
 	--secondary-color: #1F67E3;
@@ -11,95 +15,6 @@ body {
 	padding: 0;
 	min-height: 100%;
 }
-
-
-
-/*-- Elements --*/
-
-h1, h2, h3 {text-align: center;}
-
-/*---- Inputs ----*/
-
-/*------ All margins ------*/
-
-button, input[type=submit], div.buttonlike, input[type=text], input[type=password], textarea, input[type=number], select {margin: 5px;}
-
-/*------ Button and submit ------*/
-
-button, input[type=submit], div.buttonlike {
-	cursor: pointer;
-	font-family: var(--main-font);
-	font-weight: bold;
-	background: var(--main-bg-color);
-	color: var(--main-color);
-	padding: 7.5px;
-	border: 1.5px solid var(--main-color);
-	border-radius: 0.5rem;
-}
-button:hover, input[type=submit]:hover{
-	color: var(--main-bg-color);
-	background: var(--secondary-color);
-	border: 1.5px solid var(--secondary-color);
-}
-div.buttonlike {
-	width: 15.333px;
-	height: 15.333px;
-}
-
-/*------ Text inputs ------*/
-
-input[type=text], input[type=password], textarea {
-	font-family: var(--main-font);
-	color: var(--main-color);
-	background: none;
-	border: none;
-	border-bottom: 1px solid;
-}
-
-input[type=text], input[type=password] {font-size: 18px;}
-input[type=text].maxedwidth, input[type=password].maxedwidth {width: 100%;}
-
-textarea {border: 1px solid;}
-textarea.maxedwidth {
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-}
-
-/*------ Number input ------*/
-
-input[type=number] {
-	font-family: var(--main-font);
-	color: var(--main-color);
-	background: none;
-	border: 1px solid;
-	width: 7em;
-	font-size: 18px;
-}
-
-/*------ Select ------*/
-
-select, select option {
-	cursor: pointer;
-	background-color: var(--main-bg-color);
-	font-family: var(--main-font);
-	color: var(--main-color);
-	padding: 5px;
-}
-select {
-	text-overflow: ellipsis;
-	max-width: 150px;
-	border: 2px solid var(--main-color);
-	border-radius: 5px;
-}
-select:hover {
-	background-color: var(--main-color);
-	color: var(--main-bg-color);
-}
-
-
-
-/*-- Pages --*/
 
 /*---- Header ----*/
 
@@ -149,12 +64,14 @@ header nav a:hover {
     color: var(--secondary-color);
 }
 
-/*---- All pages ----*/
+/*---- Main ----*/
 
 main {
 	padding-top: 100px;
 	background-color: var(--main-bg-color);
 }
+
+h1, h2, h3 {text-align: center;}
 
 img {
     border-radius: 5px;
@@ -210,6 +127,9 @@ footer a {
 	text-decoration: none;
 	color: #478bff;
 }
+
+
+/*-- Pages --*/
 
 /*---- / ----*/
 
