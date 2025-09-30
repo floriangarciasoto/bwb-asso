@@ -16,36 +16,7 @@ body {
 
 /*-- Elements --*/
 
-/*---- Containers ----*/
-
-
-/*---- Flex classes ----*/
-
-.flx {display: flex;}
-.flx-jc {justify-content: center;}
-.flx-js {justify-content: flex-start;}
-.flx-je {justify-content: flex-end;}
-.flx-jb {justify-content: space-between;}
-.flx-ja {justify-content: space-around;}
-.flx-ac {align-items: center;}
-.flx-as {align-items: flex-start;}
-.flx-ae {align-items: flex-end;}
-.flx-dc {flex-direction: column;}
-.flx-ww {flex-wrap: wrap;}
-.flx-cells-h > *, .flx-cells-v > * {margin: 10px;}
-.flx-cells-h > * {width: 100%;}
-.flx-cells-v > * {height: 100%;}
-
-/*---- Separators ----*/
-
 h1, h2, h3 {text-align: center;}
-
-hr {
-	height: 1px;
-	color: var(--main-color);
-	background-color: var(--main-color);
-	border: none;
-}
 
 /*---- Inputs ----*/
 
