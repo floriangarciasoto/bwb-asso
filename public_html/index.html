@@ -9,7 +9,7 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- CSS principal -->
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,17 +21,17 @@
     <div class="flex items-center justify-between">
       <!-- Logo -->
       <div class="flex items-center space-x-3">
-        <img src="/images/logo.jpg" alt="Logo" class="h-10 w-10 rounded">
+        <img src="images/logo.jpg" alt="Logo" class="h-10 w-10 rounded">
         <p class="text-xl font-bold">Pixel'Art</p>
       </div>
 
       <!-- Menu navigation (desktop) -->
       <nav class="hidden md:block bg-white mr-4">
         <ul class="flex space-x-3">
-          <li><a href="/" class="text-gray-700 hover:text-blue-600">Accueil</a></li>
-          <li><a href="/activities/" class="text-gray-700 hover:text-blue-600">Activités</a></li>
-          <li><a href="/actu/" class="text-gray-700 hover:text-blue-600">Actu</a></li>
-          <li><a href="/contact/" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+          <li><a href="." class="text-gray-700 hover:text-blue-600">Accueil</a></li>
+          <li><a href="activities/" class="text-gray-700 hover:text-blue-600">Activités</a></li>
+          <li><a href="actu/" class="text-gray-700 hover:text-blue-600">Actu</a></li>
+          <li><a href="contact/" class="text-gray-700 hover:text-blue-600">Contact</a></li>
         </ul>
       </nav>
 
@@ -46,10 +46,10 @@
 
     <!-- Menu mobile (caché par défaut) -->
     <nav id="mobile-menu" class="hidden flex-col bg-white text-center text-gray-900 px-6 py-4 md:hidden space-y-4">
-      <a href="/" class="block hover:text-cyan-500">Accueil</a>
-      <a href="/activities/" class="block hover:text-cyan-500">Activités</a>
-      <a href="/actu/" class="block hover:text-cyan-500">Actu</a>
-      <a href="/contact/" class="block hover:text-cyan-500">Contact</a>
+      <a href="." class="block hover:text-cyan-500">Accueil</a>
+      <a href="activities/" class="block hover:text-cyan-500">Activités</a>
+      <a href="actu/" class="block hover:text-cyan-500">Actu</a>
+      <a href="contact/" class="block hover:text-cyan-500">Contact</a>
     </nav>
   </header>
 
@@ -66,7 +66,7 @@
           la culture geek !</h3>
       </div>
       <div class="flex justify-center">
-        <img id="main-img" src="/images/angers-jeux-video-animation.png" alt="Salon de l'asso">
+        <img id="main-img" src="images/angers-jeux-video-animation.png" alt="Salon de l'asso">
       </div>
       <div class="flex justify-center">
         <p id="site-description">Bienvenue sur le site de Pixel’Art, une association dédiée au rétro-gaming et à la
@@ -84,38 +84,38 @@
 
         <article class="box">
           <img class="box-image"
-            src="/images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
+            src="images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
             alt="Activités du club">
           <h3 class="box-name">Activités</h3>
           <p class="description box-description">
             Des ateliers rétro-gaming, pixel art et soirées geek pour partager notre passion dans une ambiance
             conviviale.
           </p>
-          <a href="/activities/" class="inline-block p-2 bg-white border border-black border-[1.5px] text-black font-semibold rounded-lg mt-4 
+          <a href="activities/" class="inline-block p-2 bg-white border border-black border-[1.5px] text-black font-semibold rounded-lg mt-4 
           hover:bg-[#1F67E3] hover:text-white hover:border-[#1F67E3] transition">
             Voir nos activités
           </a>
         </article>
 
         <article class="box">
-          <img class="box-image" src="/images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Actualité">
+          <img class="box-image" src="images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Actualité">
           <h3 class="box-name">Actu</h3>
           <p class="description box-description">
             Suivez les dernières nouvelles de l’association, nos événements passés et à venir.
           </p>
-          <a href="/actu/" class="inline-block p-2 bg-white border border-black border-[1.5px] text-black font-semibold rounded-lg mt-4 
+          <a href="actu/" class="inline-block p-2 bg-white border border-black border-[1.5px] text-black font-semibold rounded-lg mt-4 
           hover:bg-[#1F67E3] hover:text-white hover:border-[#1F67E3] transition">
             Voir notre actu
           </a>
         </article>
 
         <article class="box">
-          <img class="box-image" src="/images/OIP.jpg" alt="Nous renconter">
+          <img class="box-image" src="images/OIP.jpg" alt="Nous renconter">
           <h3 class="box-name">Contact</h3>
           <p class="description box-description">
             Rejoignez Pixel’Art ou posez-nous vos questions, nous serons ravis d’échanger avec vous.
           </p>
-          <a href="/contact/" class="inline-block p-2 bg-white border border-black border-[1.5px] text-black font-semibold rounded-lg mt-4 
+          <a href="contact/" class="inline-block p-2 bg-white border border-black border-[1.5px] text-black font-semibold rounded-lg mt-4 
           hover:bg-[#1F67E3] hover:text-white hover:border-[#1F67E3] transition">
             Nous contacter
           </a>
@@ -130,29 +130,29 @@
       <h2 class="text-2xl font-bold mb-6 text-gray-800">Galerie photo</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <img
-          src="/images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
+          src="images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
           alt="Photo 1" class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
+        <img src="images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
           class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
+        <img src="images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
         <img
-          src="/images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
+          src="images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
           alt="Photo 1" class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
+        <img src="images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
           class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
+        <img src="images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
         <img
-          src="/images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
+          src="images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
           alt="Photo 1" class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
+        <img src="images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
           class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
+        <img src="images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
         <img
-          src="/images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
+          src="images/l-atelier-retro-gaming-rassemblera-plusieurs-generations-autour-de-jeux-video-anciens-photo-le-dl-manon-baffie-1570180799.jpg"
           alt="Photo 1" class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
+        <img src="images/dca79dec184c80fd8f8753b79c178b11.jpg" alt="Photo 2"
           class="w-full h-48 object-cover rounded-lg shadow">
-        <img src="/images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
+        <img src="images/OIP.jpg" alt="Photo 3" class="w-full h-48 object-cover rounded-lg shadow">
       </div>
     </section>
 

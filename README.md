@@ -96,3 +96,9 @@ VirtualHost configuration:
 ```
 
 It works!
+
+L'accés au site via `http://localhost/association` peut se faire en mettant le lien symbolique suivant :
+
+```
+sudo ln -s /mnt/c/Users/fgs/code/bwb/bwb-asso/public_html /var/www/html/association
+```
