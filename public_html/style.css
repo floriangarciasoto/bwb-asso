@@ -251,6 +251,10 @@ footer > div:last-child {text-align: right;}
     margin-bottom: 0;
 }
 
+img {
+    border-radius: 5px;
+}
+
 /* ---- Activities ---- */
 
 .activity-text {
