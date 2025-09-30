@@ -12,10 +12,29 @@ J'ai le code de mon site dans un dépôt Git qui se trouve dans mon répertoire 
 C:\Users\fgs\code\bwb\bwb-asso\
 ```
 
-Je fais donc dans WSL un lien symbolique vers le serveur Apache de WSL pour qu'il accède de façon conventionnelle aux fichiers :
+Je fais donc dans WSL un lien symbolique vers le serveur Apache de WSL pour qu'il accède de façon conventionnelle aux fichiers (as besoin d'utiliser chown dans ce cas précis) :
 
 ```
 sudo ln -s /mnt/c/Users/fgs/code/bwb/bwb-asso /var/www/asso.bwb.local
+```
+
+J'ai donc les fichiers suivant dans mon dossier Windows :
+
+```
+$ ls -l /mnt/c/Users/fgs/code/bwb/bwb-asso/
+total 4
+-rwxrwxrwx 1 garcia garcia 2278 Sep 30 10:55 README.md
+drwxrwxrwx 1 garcia garcia 4096 Sep 30 09:12 public_html
+
+$ ls -l /mnt/c/Users/fgs/code/bwb/bwb-asso/public_html/
+total 240
+drwxrwxrwx 1 garcia garcia   4096 Sep 29 11:03 activities
+drwxrwxrwx 1 garcia garcia   4096 Sep 29 11:03 actu
+drwxrwxrwx 1 garcia garcia   4096 Sep 29 11:03 contact
+-rwxrwxrwx 1 garcia garcia 227102 Sep 29 14:50 favicon.ico
+drwxrwxrwx 1 garcia garcia   4096 Sep 29 11:16 images
+-rwxrwxrwx 1 garcia garcia   7771 Sep 30 10:09 index.html
+-rwxrwxrwx 1 garcia garcia   6226 Sep 29 16:47 style.css
 ```
 
 Pour la création du VirtualHost, j'utilise le template suivant :
